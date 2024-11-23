@@ -7,6 +7,9 @@ app.get('/',(req,res)=>{
 app.get('/test',(req,res)=>{
     res.send("Hello world test")
 });
+app.get('/next', (req,res)=>{
+    res.send("welcome to centennial")
+})
 const PORT = 8080;
 app.listen(PORT,()=>{
     console.log(`server is running on port ${PORT}`)
